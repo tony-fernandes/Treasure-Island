@@ -20,8 +20,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /_
 *******************************************************************************
 ''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
+print('Welcome to Treasure Island.')
+print('Your mission is to find the treasure.')
 
 print('''
 Despite just stepping out of a convenience store nearby your house, you suddenly
@@ -52,11 +52,12 @@ despite the smell of salty water, you see no ocean. You can hear it but you can'
 make out where it is. You only know it's no good to stay still.
 ''')
 
-path = ""
-while path != "forward" and path != "backwards" and path != "right" and path != "left":
-    path = input("To which direction will you go?\n        Type \"forward\", \"backwards\", \"right\" or \"left\" in lowercase.\nYour choice: ")
+path = ''
+while path != 'forward' and path != 'backwards' and path != 'right' and path != 'left':
+    path = input('To which direction will you go?\n        '
+                 'Type "forward", "backwards", "right" or "left".\nYour choice: ').lower()
 
-    if path == "forward":
+    if path == 'forward':
         print('''
 After some time delving forward in the dense woods, you sense a burning pain in your
 chest. Something hit you really hard and it's impact even staggered you. As you look
@@ -65,18 +66,18 @@ and it drips to the ground. You drop to your knees. the strength of your body sl
 vanishing. You can still hear nearby cries from voices unknown approaching. You lose
 consciousness before you could even feel when your face dropped against the dirt.
         ''')
-        print("        GAME OVER!")
-        input("\nPress the Enter key to exit.")
-    elif path == "backwards":
+        print('        GAME OVER!')
+        input('\nPress the Enter key to exit.')
+    elif path == 'backwards':
         print('''
 As you move a step backwards before turning around, you slip on a small rock. It was
 just bad luck. You fall backwards and hits your head against something very hard. It
 immediately made you unconscious. The last thing you remember before passing out are
 the palm trees leaves against the blue sky. Unfortunately, you never wake up again.
         ''')
-        print("        GAME OVER!")
-        input("\nPress the Enter key to exit")
-    elif path == "right":
+        print('        GAME OVER!')
+        input('\nPress the Enter key to exit')
+    elif path == 'right':
         print('''
 You turn right and delve into progressively dense woods. The tree types slowly begin
 change from a clearly tropical flora to resemble a forest, though still tropical. As
@@ -85,9 +86,9 @@ you reach a treeline. A bush prevents you to see there is no more ground ahead. 
 next step finds nothing but air and you fall from a cliff. Maybe it was for the best
 that the shock of hitting the bottom instantly shut down your brain.    
         ''')
-        print("        GAME OVER!")
-        input("\nPress the Enter key to exit.")
-    elif path == "left":
+        print('        GAME OVER!')
+        input('\nPress the Enter key to exit.')
+    elif path == 'left':
         print('''
 You turn left and goes towards the less dense woods. It feels like you are descending
 to lower terrain and the sound and smell of salty water grows stronger. It takes only
@@ -101,11 +102,12 @@ looked at the boat. Should you take it even though you didn't know if the owner 
 come after you or should you swim to the island? Maybe you should wait for the owner?
         ''')
 
-        crossing = ""
-        while crossing != "wait" and crossing != "swim" and crossing != "steal":
-            crossing = input("Will you swim or wait for the boat owner? Maybe you want to steal it?\n        Type \"swim\", \"wait\" or \"steal\" in lowercase.\nYour choice: ")
+        crossing = ''
+        while crossing != 'wait' and crossing != 'swim' and crossing != 'steal':
+            crossing = input('Will you swim or wait for the boat owner? Maybe you want to steal it?\n'
+                             '        Type "swim", "wait" or "steal".\nYour choice: ').lower()
 
-            if crossing == "wait":
+            if crossing == 'wait':
                 print('''
 Struck by a feeling of uneasiness from unknown waters and not really wanting to taint
 your soul by stealing what could be the difference between life and death for someone
@@ -122,11 +124,12 @@ only difference is their color: one is red, one is blue and one is yellow. Thoug
 doors are still, you feel like they are calling to you. 
                 ''')
 
-                color = ""
-                while color != "red" and color != "blue" and color != "yellow":
-                    color = input("Choose a door to open first.\n        Type \"red\", \"blue\" or \"yellow\" in lowercase.\nYour choice: ")
+                color = ''
+                while color != 'red' and color != 'blue' and color != 'yellow':
+                    color = input('Choose a door to open first.\n        '
+                                  'Type "red", "blue" or "yellow" in lowercase.\nYour choice: ').lower()
 
-                    if color == "red":
+                    if color == 'red':
                         print('''
 You decide to open the red door first. You touch the handler and feel it's gentle and
 inviting warmth. It reminds you of the sunny days at your hometown. Sure, you weren't
@@ -134,9 +137,9 @@ really a good kid back then, but you had much, much fun. With those thoughts in 
 you open it wide without hesitation. You meet a dragon's fire breath that reduces you
 to ashes before you even realize you were being burned alive.  
                         ''')
-                        print("        GAME OVER!")
-                        input("\nPress the Enter key to exit.")
-                    elif color == "blue":
+                        print('        GAME OVER!')
+                        input('\nPress the Enter key to exit.')
+                    elif color == 'blue':
                         print('''
 You decide to open the blue door first. The handler feels like it's sweating just like
 a cold beer would. The memories your youth comes to mind. Back then, you wanted almost
@@ -147,9 +150,9 @@ door wide open. Without giving you time to react, several large tentacles emerge
 it and constrained you. You were pulled inside while having your bones broken, several
 teeth of a kraken being your destination. 
                         ''')
-                        print("        GAME OVER!")
-                        input("\nPress the Enter key to exit.")
-                    elif color == "yellow":
+                        print('        GAME OVER!')
+                        input('\nPress the Enter key to exit.')
+                    elif color == 'yellow':
                         print('''
 When you approached the yellow door, you felt uneasy. It was giving off coldness and a
 feeling too familiar of being back at home. But since going back home was exactly what
@@ -166,8 +169,8 @@ without looking back, as a new man. And went straight from that convenience stor
 you were teleported from to your modest house. To meet these two persons that were the
 very reasons that kept you going: your wife and daughter, your true treasure.
                         ''')
-                        print("        YOU WON THE GAME!")
-                        input("\nPress the Enter key to exit.")
+                        print('        YOU WON THE GAME!')
+                        input('\nPress the Enter key to exit.')
                     else:
                         print('''
 (You typed the wrong word to proceed. Maybe a misspelling, maybe trying to find a
@@ -176,7 +179,7 @@ hidden solution, maybe as a joke, out of boredom, or who knows what else.
 So, please, try again.)
                         ''')
 
-            elif crossing == "swim":
+            elif crossing == 'swim':
                 print('''
 You decide that you don't want to wait around but it also doesn't feel right to just
 take what could be the lifeline of someone else. Then, you start to stretch yourself
@@ -185,9 +188,9 @@ crossed enough distance to see it more clearly. You were just about forty yards 
 when you felt the first bite. Your leg was gone and soon other limbs. It was violent
 and painful, and you couldn't even make up what was it that attacked you.
                 ''')
-                print("        GAME OVER!")
-                input("\nPress the Enter key to exit.")
-            elif crossing == "steal":
+                print('        GAME OVER!')
+                input('\nPress the Enter key to exit.')
+            elif crossing == 'steal':
                 print('''
 You decide you don't want to wait around and swimming is just too much work when the
 boat is just sitting there, with no owner in sight, so you take it. You push it into
@@ -199,8 +202,8 @@ now. You start swimming, but soon you feel the searing pain of your leg being ri
 out of your body by a ferocious bite. You notice you are surrounded by sharks and it
 only takes a few moments for they to devour you.
                 ''')
-                print("        GAME OVER!")
-                input("\nPress the Enter key to exit.")
+                print('        GAME OVER!')
+                input('\nPress the Enter key to exit.')
             else:
                 print('''
 (You typed the wrong word to proceed. Maybe a misspelling, maybe trying to find a
